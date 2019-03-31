@@ -2,7 +2,8 @@
 #### This project is a website with a program that enables users to take a test about JavaScript, HTML and CSS and get their results online.
 #### By **Max Maina**
 ## Description
-This project enables the users to input their names and take a quick fire test by selecting an answer from a list of multiple choice questions. The questions are created by a form and  javascript functions that calculates the total marks that the user has scored and the page has been styled using bootstrap and css. It also uses jQuery functions that work hand in hand with HTML to provide results based on the users input.  
+This project enables the users to input their names and take a quick fire test by selecting an answer from a list of multiple choice questions. The questions are created by a form and  javascript functions that calculates the total marks that the user has scored and the page has been styled using bootstrap and css. It also uses jQuery functions that work hand in hand with HTML to provide results based on the users input.
+Check it out ->https://maxie24.github.io/quiz-board/  
 
 ## Setup/Installation Requirements  
 * Open "Quiz-board" directory on terminal
@@ -11,7 +12,7 @@ This project enables the users to input their names and take a quick fire test b
 * create a remote repository on your computer using terminal and push your work to github.
 * create a branch gh-pages and push the directory once more using gh-pages as the branch.
 * Go to github click on environment and click to view the website.
-* Or rather you can click on the link to view the project. :
+* Or rather you can click on the link to view the project. :https://maxie24.github.io/quiz-board/
 ### BDD
 In order for the program to run well and to give the correct output, the code had to meet certain criteria
 1. The user has to select one choice from the list provided.  

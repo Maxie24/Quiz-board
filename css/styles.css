@@ -19,3 +19,7 @@ body {
 font-family: 'Special Elite', cursive;
 font-family: 'Roboto Mono', monospace;
 }
+
+.well {
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}

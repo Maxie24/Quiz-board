@@ -1,4 +1,4 @@
-.well {
+.panel-footer {
   background-color: #b2655097
 }
 
@@ -11,5 +11,11 @@ body {
 
 .jumbotron{
   background: #648880;
- background: linear-gradient(to right, #f6f1d3, #648880 85%, #293f50);  
+ background: linear-gradient(to right, #f6f1d3, #648880 85%, #293f50);
+}
+
+#well1 {
+  font-family: 'Luckiest Guy', cursive;
+font-family: 'Special Elite', cursive;
+font-family: 'Roboto Mono', monospace;
 }

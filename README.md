@@ -27,7 +27,7 @@ Three correct answers   | 60%  "This is below average but still not bad"
 Two correct answers     | 40%  "Poor results!! Read extensively."
 one  correct answer     | 20%  "Are you really a student here...
 No correct answer       | 0%   " Did you study for the test? "
-enter null value        |NaN%  "Please answer all questions"
+enter null value        | NaN%  "Please answer all questions"
 ## Known Bugs
 There are no major known Bugs but submit button fails at times.
 ## Technologies Used

@@ -39,10 +39,10 @@ $(document).ready(function () {
           correct++;
         }
         var percent = correct/5*100
-        if (percent 59){
+        if (percent >69){
           remark="EXELLENT!"
         }
-        if(percent >29){
+        if(percent >49){
           remark="FAIR!"
 
         }
@@ -50,7 +50,7 @@ $(document).ready(function () {
           remark="Are you really a student here?!!"
         };
 
-      document.getElementById("correct").innerHTML = "You scored " + correct +" out of 5 questions correctly."
+      document.getElementById("correct").innerHTML = "You scored " + correct +" out of 5 questions correct."
     document .getElementById("results").innerHTML = remark;
     });
 

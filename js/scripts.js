@@ -1,4 +1,4 @@
-// U I LOGIC
+  // U I LOGIC
 $(document).ready(function check() {
   var name = document.getElementById("name").value;
   var email = document.getElementById("email").value;
@@ -12,23 +12,25 @@ $(document).ready(function check() {
     event.preventDefault();
 
     //BUSINESS LOGIC
-    var total = (a + b + c + d + e);
-    var percent = ((total / 25) * 100);
+    var correct = function(){
+      var total = (a + b + c + d + e);
+      var percent = ((total / 25) * 100);
 
-    if (percent > 79) {
-      $("#correct").text( " You scored " + percent + "%. " + "Good Work!! Keep It Up Smart Brain");
-    } else if (percent > 59 && percent < 79) {
-      $("#correct").text(" You scored " + percent + "%. " + "Fair!! There`s still room for improvement");
-    } else if (percent > 39 && percent < 59) {
-      $("#correct").text(" You scored " + percent + "%. " + "This is below average but still not bad.");
-    } else if(percent >0 && percent<20) {
-      $("#correct").text(" You scored " + percent + "%. " + "Poor results!! Read extensively.");
-    }else if(percent === 0){
-      $("#correct").text("You scored "+ percent+ " %. " + "Are you really a student here cause this is a joke!! See me! ");
-    } else{
-      $("#correct").text("Please answer all questiions")
-    };
-      $("#hidden").fadeToggle();
-      event.preventDefault();
+      if (percent > 79) {
+        $("#correct").text( " You scored " + percent + "%. " + "Good Work!! Keep It Up Smart Brain");
+      } else if (percent > 59 && percent < 79) {
+        $("#correct").text(" You scored " + percent + "%. " + "Fair!! There`s still room for improvement");
+      } else if (percent > 39 && percent < 59) {
+        $("#correct").text(" You scored " + percent + "%. " + "This is below average but still not bad.");
+      } else if(percent >0 && percent<20) {
+        $("#correct").text(" You scored " + percent + "%. " + "Poor results!! Read extensively.");
+      }else if(percent === 0){
+        $("#correct").text("You scored "+ percent+ " %. " + "Are you really a student here cause this is a joke!! See me! ");
+      } else{
+        $("#correct").text("Please answer all questiions")
+      };
+        $("#hidden").fadeToggle();
+        event.preventDefault();
+    });
   });
-});
+}

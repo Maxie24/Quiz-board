@@ -2,85 +2,78 @@
 <html>
 
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Quiz Board</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="js/scripts.js"></script> <!--JQuery file-->
-  <script src="js/script.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Special+Elite" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Roboto+Mono|Special+Elite" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Special+Elite" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Roboto+Mono|Special+Elite" rel="stylesheet">
 
+    <title>QUIZ BOARD</title>
 </head>
 
 <body>
-  <div class="container">
-    <div class="jumbotron">
-      <h1>JavaScript, HTML and CSS Quick Fire.</h1>
-      <p>
-        <ul>
-        <li>Please fill out your name and date of when the test was done.</li>
-        <li>Fill out your correct email below too.</li>
-        <li>Read the questions twice, check the boxes, and make sure all questions are answered correctly</li>
-        <li>Submit your work <strong>ONLY</strong> if you are done.</li>
-      </ul></p>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>JAVASCRIPT,HTML and CSS Quick Fire</h1>
+            <p><li>Please fill out your name and date of when the test was done</li>
+               <li>Fill out your email below too.</li>
+               <li>Read the questions twice, check the boxes and make sure all the questions are answered correctly</li>
+               <li>Submit your work only if you are done</li></p>
+        </div>
+        <div class="well">
+            <h2>Please fill in your credentials</h2>
+            Name:<input type="text" id="name" name="firstname" value="">
+            Date of test: <input type="date" name="date" value="">
+            Email:<input type="email" id="email" name="email" value="">
+            <input type="submit" id="btn1" class="btn btn-primary" value="submit">
+           <form id="quiz">
+                <div class="form-group">
+                    <p>1.A HTML tag that specifies an inline css style for an element is called?<strong>10MKS</strong>
+                    </p>
+                    <input type="radio" name="Q1" value="Style" required>Style<br>
+                    <input type="radio" name="Q1" value="Design">Design<br>
+                    <input type="radio" name="Q1" value="Define">Define<br>
 
-    </div>
-    <div class="well">
-      <h4>Please fill in your credentials</h4>
-      <form id="quiz" name="quiz">
-        Name:<input type="text" id="name" name="firstname" value="">
-        Date of test : <input type="date" name="date" value="">
-        Email:<input type="email" id="email" name="email" value="">
-        <ol>
-          <div id="well1">
-          <li id="Question 1">A HTML tag that specifies an inline css style for an element is called?<br>
-            <label for="quiz1"><input id="mc" type="radio" name="choice1" value="0">A. Design</label><br>
-            <label for="quiz1"><input id="mc" type="radio" name="choice1" value="5">B. Style</label><br>
-            <label for="quiz1"><input id="mc" type="radio" name="choice1" value="0">C. Modify</label><br>
-            <label for="quiz1"><input id="mc" type="radio" name="choice1" value="0">D. Define</label>
-          </li>
-          <li id="Question 2">When an attribute of HTML value contains double quotes, it is neccesary to use?<br>
-            <label for="quiz2"><input id="mc" type="radio" name="choice2" value="5">A. Single quotes</label><br>
-            <label for="quiz2"><input id="mc" type="radio" name="choice2" value="0">B. Double quotes</label><br>
-            <label for="quiz2"><input id="mc" type="radio" name="choice2" value="0">C. Single & Double quotes</label><br>
-            <label for="quiz2"><input id="mc" type="radio" name="choice2" value="0">D. No quotes</label><br>
-            </li>
+                    <p>2.When an attribute of HTML value contains double quotes it is necessary to use?<strong>10MKS</strong></p>
+                    <input type="radio" name="Q2" value="Single quotes" required>Single quotes<br>
+                    <input type="radio" name="Q2" value="Double quotes">Double quotes<br>
+                    <input type="radio" name="Q2" value="No quotes">No quotes<br>
 
-            <li id="Question 3">JavaScript is a ........ language.<br>
-          <label for="Quiz3"><input id="mc" type="radio" name="choice3" value="0"> A. Programming</label><br>
-          <label for="Quiz3"><input id="mc" type="radio" name="choice3" value="0"> B. Application</label><br>
-          <label for="Quiz3"><input id="mc" type="radio" name="choice3" value="5"> C. Scripting</label><br>
-          <label for="Quiz3"><input id="mc" type="radio" name="choice3" value="0"> D. None of the above</label>
-          </li>
+                    <p>3.Javascript is a_______language?<strong>10MKS</strong></p>
+                    <input type="radio" name="Q3" value="programming">programming<br>
+                    <input type="radio" name="Q3" value="scripting">scripting<br>
+                    <input type="radio" name="Q3" value="application">application<br>
 
-          <li id="Question 4">JavaScript is designed for which of the following purporse?<br>
-            <label for="Quiz4"><input id="mc" type="radio" name="choice4" value="0"> A. To perform server side scripting operation</label><br>
-            <label for="Quiz4"><input id="mc" type="radio" name="choice4" value="0"> B. To style HTML pages</label><br>
-            <label for="Quiz4"><input id="mc" type="radio" name="choice4" value="0"> C. To excecute query related on DB server</label><br>
-            <label for="Quiz4"><input id="mc" type="radio" name="choice4" value="5"> D. To add interactivity on HTML pages</label>
-            </li>
 
-            <li id="Question 5">A variable is terminated by a?<br>
-              <label for="Quiz5"><input id="mc" type="radio" name="choice5" value="5"> A. semi-colon ( ; )</label><br>
-              <label for="Quiz5"><input id="mc" type="radio" name="choice5" value="0"> B. end curly-brackets ( } )</label><br>
-              <label for="Quiz5"><input id="mc" type="radio" name="choice5" value="0"> C. period ( . )</label><br>
-              <label for="Quiz5"><input id="mc" type="radio" name="choice5" value="0"> D. exlamation period ( ! )</label>
-              </li>
+
+                    <p>4.Javascript is designed for the following purporse?<strong>10MKS</strong></p>
+                    <input type="radio" name="Q4" value="To perform server side scripting operation">To perform server side scripting operation<br>
+                    <input type="radio" name="Q4" value="To style HTML pages">To style HTML pages<br>
+                    <input type="radio" name="Q4" value="To add interactivity on HTML">To add interactivity on HTML<br>
+
+
+                    <p>5.A variable is terminated by a?<strong>10MKS</strong></p>
+                    <input type="radio" name="Q5" value="semi-colon">semi-colon<br>
+                    <input type="radio" name="Q5" value="period">period<br>
+                    <input type="radio" name="Q5" value="exclamation">exclamation<br>
+
+                    <div class="panel-footer">
+                        <button id="quiz" type="submit" class="btn btn-info" name="button">Submit</button>
+                    </div>
+                    </form>
+
+
+                    <div id="results"></div>
+                    <div id="correct"></div>
+
+                  </div>
+                </div>
+              </div>
             </div>
-        </ol>
-        <button type="submit">check score</button id=#correct>
-        <input type="reset" value="Reset">
-      </form>
-    </div>
-    <div class="panel-footer">
-      <h2>Score board</h2>
-      <h2 id="correct">Total score</h2>
-          </div>
-  </div>
+
 </body>
+
 </html>
